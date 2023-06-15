@@ -1,0 +1,21 @@
+@use '../abstracts/mixins' as mix;
+
+body {
+	position: relative;
+	@include mix.flexbox;
+	min-height: 100vh;
+	-webkit-font-smoothing: antialiased;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+img,
+picture {
+	display: block;
+	max-width: 100%;
+}

@@ -1,0 +1,89 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/functions' as func;
+@use '../abstracts/mixins' as mix;
+
+.card {
+	width: 100%;
+	max-width: func.em(420, var.$font-size-primary);
+	margin: func.em(40, var.$font-size-primary) 0
+		func.em(60, var.$font-size-primary);
+	overflow: hidden;
+}
+
+.card-image {
+	background-color: var.$color-soft-violet;
+}
+
+.card-image img {
+	object-fit: cover;
+	object-position: top;
+	mix-blend-mode: multiply;
+	opacity: 0.75;
+}
+
+.card-body {
+	text-align: center;
+}
+
+.card-text {
+	margin-bottom: func.em(36, var.$font-size-primary);
+}
+
+.card-list {
+	@include mix.flexbox;
+	@include mix.flex-direction(column);
+	gap: func.em(30, var.$font-size-primary);
+}
+
+.card-list-item {
+	gap: func.em(2, 12);
+	font-size: func.em(12, var.$font-size-primary);
+	text-transform: uppercase;
+}
+
+.card-list-item .num {
+	font-size: func.em(20, 12);
+	font-weight: var.$font-weight-700;
+	color: var.$color-white;
+}
+
+.card-list-item .label {
+	letter-spacing: func.em(1, var.$font-size-primary);
+}
+
+@media (min-width: 65em) {
+	.card {
+		max-width: func.em(1110, var.$font-size-primary);
+	}
+
+	.card-header,
+	.card-body {
+		@include mix.flex-basis(50%);
+		max-width: 50%;
+	}
+
+	.card-image {
+		@include mix.flex(auto);
+	}
+
+	.card-body {
+		text-align: left;
+	}
+
+	.card-title {
+		font-size: func.em(36, var.$font-size-primary);
+	}
+
+	.card-text {
+		max-width: func.em(370, var.$font-size-primary);
+		margin-bottom: func.em(60, var.$font-size-primary);
+	}
+
+	.card-list {
+		@include mix.flex-direction(row);
+	}
+
+	.card-list-item {
+		min-width: func.em(112, 12);
+	}
+}
