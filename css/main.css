@@ -11918,6 +11918,7 @@ body {
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
   }
+  .ratio,
   .ratio > * {
     position: static;
   }

@@ -58,6 +58,7 @@ body {
 		@include mix.flex-direction(row-reverse);
 	}
 
+	.ratio,
 	.ratio > * {
 		position: static;
 	}
