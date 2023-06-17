@@ -11918,6 +11918,9 @@ body {
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
   }
+  .ratio > * {
+    position: static;
+  }
   .ratio-4x3 {
     --bs-aspect-ratio: 0;
   }
