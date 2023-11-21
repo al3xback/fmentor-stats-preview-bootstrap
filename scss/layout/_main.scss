@@ -2,11 +2,11 @@
 
 main,
 main > .container-fluid {
-	@include mix.flexbox;
-	@include mix.flex(auto);
+	display: flex;
+	flex: auto;
 }
 
 main > .container-fluid {
-	@include mix.justify-content(center);
-	@include mix.align-items(center);
+	justify-content: center;
+	align-items: center;
 }

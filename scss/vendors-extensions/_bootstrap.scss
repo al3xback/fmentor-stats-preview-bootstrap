@@ -55,7 +55,7 @@ body {
 
 @media (min-width: 65em) {
 	.card {
-		@include mix.flex-direction(row-reverse);
+		flex-direction: row-reverse;
 	}
 
 	.ratio,

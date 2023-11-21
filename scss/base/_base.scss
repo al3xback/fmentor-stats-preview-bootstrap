@@ -2,7 +2,7 @@
 
 body {
 	position: relative;
-	@include mix.flexbox;
+	display: flex;
 	min-height: 100vh;
 	-webkit-font-smoothing: antialiased;
 }

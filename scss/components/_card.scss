@@ -30,8 +30,8 @@
 }
 
 .card-list {
-	@include mix.flexbox;
-	@include mix.flex-direction(column);
+	display: flex;
+	flex-direction: column;
 	gap: func.em(30, var.$font-size-primary);
 }
 
@@ -58,12 +58,12 @@
 
 	.card-header,
 	.card-body {
-		@include mix.flex-basis(50%);
+		flex-basis: 50%;
 		max-width: 50%;
 	}
 
 	.card-image {
-		@include mix.flex(auto);
+		flex: auto;
 	}
 
 	.card-body {
@@ -80,7 +80,7 @@
 	}
 
 	.card-list {
-		@include mix.flex-direction(row);
+		flex-direction: row;
 	}
 
 	.card-list-item {
