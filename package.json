@@ -1,7 +1,7 @@
 {
 	"name": "fmentor-stats-preview-bootstrap",
 	"version": "1.0.0",
-	"description": "stats preview card component using bootstrap 5",
+	"description": "stats preview card component using bootstrap",
 	"main": "index.js",
 	"scripts": {
 		"sass-dev": "sass --watch scss/main.scss css/main.css",
